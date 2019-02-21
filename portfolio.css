@@ -1,0 +1,401 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.landing {
+    background-image: url('https://www.uni-bayreuth.de/de/forschung/profilfelder/emerging-fields/innovation-und-verbraucherschutz/images/layoutbilder_zentral/Birne.jpg');
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    height: 100%;
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin: 14% auto;
+    background: #111;
+}
+
+.captionMsgUp, .captionMsgLow{
+    font-size: 4.5rem;
+    display: block;
+    height: 30%;
+    font-weight: 700;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.captionMsgUp>p, .captionMsgLow>p{
+    margin: 0;
+}
+
+.captionMsgUp>p{
+    border-bottom: 2px white solid;
+}
+
+.captionMsgUp {
+    padding-top: 0%;
+}
+
+.container {
+    max-width: 95%;
+}
+
+.navbar-nav {
+    margin-left: 72%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.nav-item {
+    text-align: center;
+    width: 70%;
+    padding-right: 6%;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.skillset {
+    margin-top: -9%;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.skillset>.row>.col-md-6>span {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    padding: 0 0 3% 0;
+    font-size: 3rem;
+}
+
+.skillset>.row>.col-md-6>div>.introduction {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    margin: 17% 0 0 0;
+    font-size: 1.2rem;
+    line-height: 50px;
+    font-weight: 100;
+}
+
+.far {
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 2%;
+}
+
+.skillset>.row>.col-md-6 {
+    padding: 0 0 0 5%;
+}
+
+hr {
+    display: none;
+}
+
+/* Meter Bar styling */
+
+.meterbar {
+    margin: 2%;
+    font-size: 1.5rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+meter {
+    width: 80%;
+    height: 25px;
+    border-radius: 3px;
+}
+
+meter::-webkit-meter-bar {
+    background-color: whiteSmoke;
+    border-radius: 35px;
+}
+
+meter::-webkit-meter-optimum-value,
+meter::-webkit-meter-suboptimum-value,
+meter::-webkit-meter-even-less-good-value {
+    border-radius: 35px;
+}
+
+.htmlbar::-webkit-meter-optimum-value,
+        .cssbar::-webkit-meter-optimum-value,
+        .jsbar::-webkit-meter-optimum-value {
+            background: rgb(16, 123, 185);
+            transition: background 0.6s;
+        }
+
+        .jsbar::-webkit-meter-suboptimum-value,
+        .htmlbar::-webkit-meter-suboptimum-value,
+        .cssbar::-webkit-meter-suboptimum-value {
+            background: rgb(16, 123, 185);
+            transition: background 0.6s;
+        }
+
+        .cssbar::-webkit-meter-even-less-good-value,
+        .htmlbar::-webkit-meter-even-less-good-value,
+        .jsbar::-webkit-meter-even-less-good-value {
+            background: rgb(16, 123, 185);
+            transition: background 0.6s;
+        }
+
+/* Meter Bar styling */
+
+.ebackground {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrhUlWwd1WSqBFnXEWhJxNTxpMb5ZN65sfUO6fbUwVbLkkxtB');
+    min-height: 70%;
+    width: 100%;
+
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.experience {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9j7Oa9PC-xURv9qn3X8eUzh2UBCiWGb7tN5JSL20OEdbdCrY');
+    min-height: 70%;
+    width: 100%;
+
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ebackground>div, .experience>div{
+    margin: 8% auto;
+    width: 350px;
+    padding: 8% 0 0 0;
+}
+.ebackground>div>p, .experience>div>p{
+    font-size: 4.5rem;
+    display: block;
+    height: 30%;
+    font-weight: 700;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    background: rgb(104, 103, 103);
+    width: 350px;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+}
+
+.col-md-6>li {
+    padding: 2% 0;
+}
+
+.newcontainer{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.weminelogo, .hotellogo {
+    width: 460px;
+    margin-left: 14%;
+    margin-top: -5%;
+}
+
+.three, .four{
+    margin-top: 7%;
+}
+
+.vistralogo {
+    margin-left: 18%;
+}
+
+footer {
+    background: black;
+    width: 100%;
+    height: 60px;
+    margin-top: 5%;
+}
+
+footer>div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+    float: right;
+    margin-top: 1.5%;
+}
+
+footer>div>a, footer>div>a:hover {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 0.5% 15%;
+}
+
+/*Media Query Starts Here*/
+
+@media screen and (max-width: 576px){
+
+    .landing {
+        background-image: url('https://www.certificationcollective.com/wp-content/uploads/2018/08/qms-connected-header-bbg.jpg');
+        min-height: 100%;
+        margin: 0;
+
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .ebackground {
+        background-image: url('https://m.madhyamam.com/sites/default/files/styles/og_image/public/Higher-Education_1.jpg');
+        min-height: 100%;
+        width: 100%;
+
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .experience {
+        background-image: url('https://www.theselfemployed.com/wp-content/uploads/2017/05/20150727171039-business-desk-workspace-working-hard.jpg');
+        min-height: 100%;
+        width: 100%;
+
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fa, .fas {
+        color: white;
+    }
+
+    .navbar-nav {
+    margin-left: 0;
+}
+
+    .navbar-light .navbar-toggler {
+        border-color: white;
+    }
+
+    #navbarNavDropdown {
+        margin-left: 61%;
+        margin-top: -10%;
+    }
+
+
+    #navbarNavDropdown>ul>li>a {
+        float: left;
+    }
+
+    .caption {
+        height: 100%;
+        text-align: center;
+        color: white;
+        width: 90%;
+        margin: 30% auto;
+        background: rgb(68,66,66);
+    }
+
+    .captionMsgUp, .captionMsgLow{
+        font-size: 2rem;
+        display: block;
+        height: 30%;
+        font-weight: 700;
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+    .captionMsgUp>p, .captionMsgLow>p{
+        margin: 0;
+    }
+
+    .captionMsgUp>p{
+        border-bottom: 2px white solid;
+    }
+
+    .captionMsgUp {
+        padding-top: 0%;
+    }
+     .ebackground>div>p, .experience>div>p{
+        font-size: 3.5rem;
+        display: block;
+        height: 30%;
+        font-weight: 400;
+        font-family: 'Fjalla One', sans-serif;
+        color: white;
+        background: rgb(104, 103, 103);
+        width: 350px;
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .dbslogo, .vistralogo, .weminelogo, .hotellogo {
+        margin: 0;
+        width: 100%;
+    }
+
+    .skillset>.row>.col-md-6>div>.introduction {
+        padding-right: 5%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    hr {
+        display: block;
+        border: 1px solid gray;
+        width: 93%;
+        margin: 0 0 5% 0;
+    }
+
+      br {
+        display: none;
+    }
+
+
+    footer>div{
+        width: 45%;
+        margin-top: 5%;
+    }
+
+    footer>div>a, footer>div>a:hover {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 25px;
+        padding: 0.5% 15%;
+    }
+
+    .card {
+        border: none;
+    }
+}
