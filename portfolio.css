@@ -6,6 +6,10 @@ body, html {
     overflow-x: hidden;
 }
 
+.brandlogo {
+    width: 25%;
+}
+
 .landing {
     background-image: url('https://www.uni-bayreuth.de/de/forschung/profilfelder/emerging-fields/innovation-und-verbraucherschutz/images/layoutbilder_zentral/Birne.jpg');
     min-height: 100%;
@@ -54,7 +58,7 @@ body, html {
 }
 
 .navbar-nav {
-    margin-left: 72%;
+    margin-left: 60%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -187,7 +191,7 @@ meter::-webkit-meter-even-less-good-value {
 .ebackground>div, .experience>div{
     margin: 8% auto;
     width: 350px;
-    padding: 8% 0 0 0;
+    padding: 11% 0 0 0;
 }
 .ebackground>div>p, .experience>div>p{
     font-size: 4.5rem;
@@ -240,7 +244,7 @@ footer>div{
     vertical-align: middle;
     width: 15%;
     float: right;
-    margin-top: 1.5%;
+    margin-top: 1%;
 }
 
 footer>div>a, footer>div>a:hover {
@@ -251,6 +255,7 @@ footer>div>a, footer>div>a:hover {
     border-radius: 25px;
     padding: 0.5% 15%;
 }
+
 
 /*Media Query Starts Here*/
 
@@ -293,6 +298,10 @@ footer>div>a, footer>div>a:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .navbar-brand {
+        width: 59%;
     }
 
     .fa, .fas {
@@ -358,6 +367,10 @@ footer>div>a, footer>div>a:hover {
         text-align: center;
     }
 
+    .ebackground>div, .experience>div {
+        padding: 22% 0 0 0;
+    }
+
     .dbslogo, .vistralogo, .weminelogo, .hotellogo {
         margin: 0;
         width: 100%;
@@ -397,5 +410,6 @@ footer>div>a, footer>div>a:hover {
 
     .card {
         border: none;
+        margin-top: 15%;
     }
 }
