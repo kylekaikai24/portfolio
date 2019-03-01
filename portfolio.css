@@ -11,7 +11,7 @@ body, html {
 }
 
 .landing {
-    background-image: url('https://www.uni-bayreuth.de/de/forschung/profilfelder/emerging-fields/innovation-und-verbraucherschutz/images/layoutbilder_zentral/Birne.jpg');
+    background-image: url('./src/portfolio_pcVersion_landingbgp.jpg');
     min-height: 100%;
     width: 100%;
     margin: 0;
@@ -31,7 +31,23 @@ body, html {
     width: 50%;
     margin: 14% auto;
     background: #111;
+    opacity: 1;
+    -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
+
+@-webkit-keyframes fadeIn {
+    from {margin: 10% auto; opacity: 0;}
+    to {margin: 14% auto; opacity: 1;}
+  }
+
+  /* Standard syntax */
+  @keyframes fadeIn {
+    from {margin: 10% auto; opacity: 0;}
+    to {margin: 14% auto; opacity: 1;}
+  }
 
 .captionMsgUp, .captionMsgLow{
     font-size: 4.5rem;
@@ -40,6 +56,25 @@ body, html {
     font-weight: 700;
     font-family: 'Fjalla One', sans-serif;
 }
+
+.navbar-nav {
+    width: 27%;
+    -webkit-animation-name: fadeLeft; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeLeft;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeLeft {
+    from {width: 0%; opacity: 0;}
+    to {width: 27%; opacity: 1;}
+  }
+
+  /* Standard syntax */
+  @keyframes fadeLeft {
+    from {width: 0%; opacity: 0;}
+    to {width: 27%; opacity: 1;}
+  }
 
 .captionMsgUp>p, .captionMsgLow>p{
     margin: 0;
@@ -163,7 +198,7 @@ meter::-webkit-meter-even-less-good-value {
 /* Meter Bar styling */
 
 .ebackground {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrhUlWwd1WSqBFnXEWhJxNTxpMb5ZN65sfUO6fbUwVbLkkxtB');
+    background-image: url('./src/education_background_pc.png');
     min-height: 70%;
     width: 100%;
 
@@ -176,7 +211,7 @@ meter::-webkit-meter-even-less-good-value {
 }
 
 .experience {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9j7Oa9PC-xURv9qn3X8eUzh2UBCiWGb7tN5JSL20OEdbdCrY');
+    background-image: url('./src/working_exp_pc.jpg');
     min-height: 70%;
     width: 100%;
 
@@ -262,7 +297,7 @@ footer>div>a, footer>div>a:hover {
 @media screen and (max-width: 576px){
 
     .landing {
-        background-image: url('https://www.certificationcollective.com/wp-content/uploads/2018/08/qms-connected-header-bbg.jpg');
+        background-image: url('./src/portfolio_mobileVersion_landingbgp.jpg');
         min-height: 100%;
         margin: 0;
 
@@ -275,7 +310,7 @@ footer>div>a, footer>div>a:hover {
     }
 
     .ebackground {
-        background-image: url('https://m.madhyamam.com/sites/default/files/styles/og_image/public/Higher-Education_1.jpg');
+        background-image: url('./src/education_background_mobile.jpg');
         min-height: 100%;
         width: 100%;
 
@@ -288,7 +323,7 @@ footer>div>a, footer>div>a:hover {
     }
 
     .experience {
-        background-image: url('https://www.theselfemployed.com/wp-content/uploads/2017/05/20150727171039-business-desk-workspace-working-hard.jpg');
+        background-image: url('./src/working_exp_mobile.jpg');
         min-height: 100%;
         width: 100%;
 
@@ -333,7 +368,22 @@ footer>div>a, footer>div>a:hover {
         width: 90%;
         margin: 30% auto;
         background: rgb(68,66,66);
+        -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: fadeIn;
+        animation-duration: 2s;
     }
+
+    @-webkit-keyframes fadeIn {
+        from {margin: 26% auto; opacity: 0;}
+        to {margin: 30% auto; opacity: 1;}
+      }
+
+      /* Standard syntax */
+      @keyframes fadeIn {
+        from {margin: 26% auto; opacity: 0;}
+        to {margin: 30% auto; opacity: 1;}
+      }
 
     .captionMsgUp, .captionMsgLow{
         font-size: 2rem;
@@ -393,6 +443,11 @@ footer>div>a, footer>div>a:hover {
         display: none;
     }
 
+    meter {
+        width: 90%;
+        height: 25px;
+        border-radius: 3px;
+    }
 
     footer>div{
         width: 45%;
