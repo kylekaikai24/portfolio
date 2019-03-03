@@ -1,0 +1,126 @@
+[v-cloak] {
+  display: none;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.hideClass {
+  display: none;
+}
+
+.jumbotron {
+  background: rgb(56, 34, 153);
+  height: 250px;
+}
+
+.jumbMessage{
+  display: inline-block;
+  color: white;
+  width: 48%;
+  padding-left: 100px;
+}
+
+.selectOption {
+  display: inline-block;
+  width: 48%;
+  padding-bottom: 11%;
+  vertical-align: middle;
+  padding-left: 10%;
+}
+
+.jumbotron h1 {
+  font-family: 'Noto Sans TC', sans-serif;
+  margin: 0;
+}
+
+
+select {
+  width: 200px;
+  border-radius: 35px;
+  font-size: 20px;
+  outline: none;
+}
+
+hr {
+  width: 150px;
+  background-color: rgb(56, 34, 153);
+  border-radius: 15px;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.hideBtnDiv {
+    margin: 15px auto;
+    width: 17%;
+}
+
+.hideBtn {
+  border-radius: 20px;
+  width: 122%;
+  background: none;
+  border: 2px black solid;
+}
+
+button:focus{
+  outline: none;
+}
+
+@media screen and (max-width: 764px) {
+
+  .container {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .jumbotron {
+    width: 100%;
+  }
+
+  .jumbMessage{
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+
+  .selectOption {
+    display: block;
+    margin: 3.5% auto 0 auto;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  
+  select {
+    width: 180px;
+  }
+  
+  .hideBtn {
+    border-radius: 20px;
+    width: 98%;
+    outline: none;
+    border: 2px black solid;
+}
+  
+  .hideBtnDiv {
+    margin: 15px auto;
+    width: 26%;
+}
+}

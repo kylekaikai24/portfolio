@@ -3,7 +3,7 @@ body, html {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 .brandlogo {
@@ -11,7 +11,7 @@ body, html {
 }
 
 .landing {
-    background-image: url('./src/portfolio_pcVersion_landingbgp.jpg');
+    background-image: url('../photo/portfolio_pcVersion_landingbgp.jpg');
     min-height: 100%;
     width: 100%;
     margin: 0;
@@ -42,7 +42,7 @@ body, html {
     from {margin: 10% auto; opacity: 0;}
     to {margin: 14% auto; opacity: 1;}
   }
-
+  
   /* Standard syntax */
   @keyframes fadeIn {
     from {margin: 10% auto; opacity: 0;}
@@ -57,24 +57,24 @@ body, html {
     font-family: 'Fjalla One', sans-serif;
 }
 
-.navbar-nav {
-    width: 27%;
-    -webkit-animation-name: fadeLeft; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+/*.navbar-nav {
+    width: 40%;
+    -webkit-animation-name: fadeLeft;
+    -webkit-animation-duration: 2s; 
     animation-name: fadeLeft;
     animation-duration: 2s;
 }
 
 @-webkit-keyframes fadeLeft {
     from {width: 0%; opacity: 0;}
-    to {width: 27%; opacity: 1;}
+    to {width: 40%; opacity: 1;}
   }
+  
 
-  /* Standard syntax */
   @keyframes fadeLeft {
     from {width: 0%; opacity: 0;}
-    to {width: 27%; opacity: 1;}
-  }
+    to {width: 40%; opacity: 1;}
+  }*/
 
 .captionMsgUp>p, .captionMsgLow>p{
     margin: 0;
@@ -85,28 +85,46 @@ body, html {
 }
 
 .captionMsgUp {
-    padding-top: 0%;
+    padding-top: 0%; 
 }
 
 .container {
     max-width: 95%;
 }
 
-.navbar-nav {
+/* .navbar-nav {
     margin-left: 60%;
-}
+} */
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
     font-family: 'Fjalla One', sans-serif;
 }
 
-.nav-item {
+/* .nav-item {
     text-align: center;
     width: 70%;
     padding-right: 6%;
     font-family: 'Fjalla One', sans-serif;
+} */
+
+.nav-item {
+    -webkit-animation-name: fadeLeft; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeLeft;
+    animation-duration: 5s;
 }
+
+@-webkit-keyframes fadeLeft {
+    from {width: 0%; opacity: 0;}
+    to {width: 100%; opacity: 1;}
+  }
+  
+  /* Standard syntax */
+  @keyframes fadeLeft {
+    from {width: 0%; opacity: 0;}
+    to {width: 100%; opacity: 1;}
+  }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: white;
@@ -198,7 +216,7 @@ meter::-webkit-meter-even-less-good-value {
 /* Meter Bar styling */
 
 .ebackground {
-    background-image: url('./src/education_background_pc.png');
+    background-image: url('../photo/education_background_pc.png');
     min-height: 70%;
     width: 100%;
 
@@ -211,7 +229,7 @@ meter::-webkit-meter-even-less-good-value {
 }
 
 .experience {
-    background-image: url('./src/working_exp_pc.jpg');
+    background-image: url('../photo/working_exp_pc.jpg');
     min-height: 70%;
     width: 100%;
 
@@ -223,12 +241,29 @@ meter::-webkit-meter-even-less-good-value {
     background-size: cover;
 }
 
-.ebackground>div, .experience>div{
+.carousel-inner > .item {
+    height: 400px;
+ }
+
+.project {
+    background-image: url('https://cdn.lynda.com/static/landing/images/hero/ProjectScheduler_1200x630-1503436375769.jpg');
+    min-height: 70%;
+    width: 100%;
+
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ebackground>div, .experience>div, .project>div{
     margin: 8% auto;
     width: 350px;
     padding: 11% 0 0 0;
 }
-.ebackground>div>p, .experience>div>p{
+.ebackground>div>p, .experience>div>p, .project>div>p{
     font-size: 4.5rem;
     display: block;
     height: 30%;
@@ -291,13 +326,89 @@ footer>div>a, footer>div>a:hover {
     padding: 0.5% 15%;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 51%;
+    height: 430px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* .carousel-item-1-image {
+    background-image: url('./src/photo/tictactoe.png');
+    height: 430px;
+} */
+
+.carousel-control-next {
+    width: 3%;
+    height: 15%;
+    margin: 10% 25% 0 0;
+    background: lightgray;
+}
+
+.carousel-control-prev {
+    width: 3%;
+    height: 15%;
+    margin: 10% 0 0 25%;
+    background: lightgray;
+}
+
+.carousel-inner>div>img{
+    opacity: 1;
+}
+
+.carousel-inner>div>div>h5{
+    color: black;
+    margin: 0 0 15% 57%;
+    font-size: 35px;
+    width: 50%;
+}
+
+/* .carousel-inner>div>div>p{
+    color: black;
+    margin: 0 0 9% 50%;
+    font-size: 1.2rem;
+    width: 61%;
+} */
+
+.carousel-inner>div>div>button{
+    margin: 0 0 13% 64%;
+}
+
+.carousel-inner>div:nth-of-type(2)>div>h5{
+    color: black;
+    margin: 0 0 13% 45%;
+    font-size: 30px;
+    width: 73%;
+    color: white;
+}
+
+.carousel-inner>div:nth-of-type(2)>div>button{
+    margin: 0 0 9% 64%;
+}
+
+.carousel-inner>div>div>button>a{
+    color: white;
+    text-decoration: none;
+}
+
 
 /*Media Query Starts Here*/
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 1401px){
+    .carousel-inner>div:nth-of-type(2)>div>h5{
+        color: black;
+        margin: 0 0 9% 45%;
+        font-size: 30px;
+        width: 73%;
+        color: white;
+    }
+}
 
+@media screen and (max-width: 576px){
+    
     .landing {
-        background-image: url('./src/portfolio_mobileVersion_landingbgp.jpg');
+        background-image: url('../photo/portfolio_mobileVersion_landingbgp.jpg');
         min-height: 100%;
         margin: 0;
 
@@ -310,7 +421,7 @@ footer>div>a, footer>div>a:hover {
     }
 
     .ebackground {
-        background-image: url('./src/education_background_mobile.jpg');
+        background-image: url('../photo/education_background_mobile.jpg');
         min-height: 100%;
         width: 100%;
 
@@ -323,7 +434,7 @@ footer>div>a, footer>div>a:hover {
     }
 
     .experience {
-        background-image: url('./src/working_exp_mobile.jpg');
+        background-image: url('../photo/working_exp_mobile.jpg');
         min-height: 100%;
         width: 100%;
 
@@ -334,7 +445,7 @@ footer>div>a, footer>div>a:hover {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    
     .navbar-brand {
         width: 59%;
     }
@@ -342,7 +453,7 @@ footer>div>a, footer>div>a:hover {
     .fa, .fas {
         color: white;
     }
-
+    
     .navbar-nav {
     margin-left: 0;
 }
@@ -355,7 +466,7 @@ footer>div>a, footer>div>a:hover {
         margin-left: 61%;
         margin-top: -10%;
     }
-
+    
 
     #navbarNavDropdown>ul>li>a {
         float: left;
@@ -378,13 +489,13 @@ footer>div>a, footer>div>a:hover {
         from {margin: 26% auto; opacity: 0;}
         to {margin: 30% auto; opacity: 1;}
       }
-
+      
       /* Standard syntax */
       @keyframes fadeIn {
         from {margin: 26% auto; opacity: 0;}
         to {margin: 30% auto; opacity: 1;}
       }
-
+    
     .captionMsgUp, .captionMsgLow{
         font-size: 2rem;
         display: block;
@@ -392,17 +503,17 @@ footer>div>a, footer>div>a:hover {
         font-weight: 700;
         font-family: 'Fjalla One', sans-serif;
     }
-
+    
     .captionMsgUp>p, .captionMsgLow>p{
         margin: 0;
     }
-
+    
     .captionMsgUp>p{
         border-bottom: 2px white solid;
     }
-
+    
     .captionMsgUp {
-        padding-top: 0%;
+        padding-top: 0%; 
     }
      .ebackground>div>p, .experience>div>p{
         font-size: 3.5rem;
@@ -416,7 +527,7 @@ footer>div>a, footer>div>a:hover {
         margin-top: 20%;
         text-align: center;
     }
-
+    
     .ebackground>div, .experience>div {
         padding: 22% 0 0 0;
     }
@@ -438,11 +549,11 @@ footer>div>a, footer>div>a:hover {
         width: 93%;
         margin: 0 0 5% 0;
     }
-
+    
       br {
         display: none;
     }
-
+    
     meter {
         width: 90%;
         height: 25px;
@@ -462,9 +573,18 @@ footer>div>a, footer>div>a:hover {
         border-radius: 25px;
         padding: 0.5% 15%;
     }
-
+    
     .card {
         border: none;
         margin-top: 15%;
     }
+
+    .project, .projectSlide {
+        display: none;
+    }
 }
+
+
+
+
+

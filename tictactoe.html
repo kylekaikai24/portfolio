@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/tictactoe.css">
+</head>
+
+<body onload="initGame()">
+    <script src="./src/js/tictactoe.js"></script>
+
+
+    <header>
+        <h1>TIC TAC TOE</h1>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section class="chooseSide" id="chooseSide">
+        <div>
+            <h3>Choose Your Side</h3>
+        </div>
+        <div>
+            <form action="">
+                <input type="radio" value="O" name="chooseStart" id="circle" checked="checked">
+                <label for="circle" style="color: green">Ο</label>
+
+                <input type="radio" value="X" name="chooseStart" id="cross">
+                <label for="cross" style="color: red">X</label>
+
+            </form>
+            <br />
+            <button onclick="chooseOX()"
+                style="border-radius: 25px; padding: 1% 5%; outline: none; cursor: pointer;">GO!!!</button>
+        </div>
+    </section>
+    <section id="tictactoeBody">
+        <div class="container">
+            <div class="contentWrapper">
+                <table>
+                    <tr>
+                        <td><input type="button" class="square" id="1" onclick="setPlayer(1)" value="" /></td>
+                        <td><input type="button" class="square" id="2" onclick="setPlayer(2)" value="" /></td>
+                        <td><input type="button" class="square" id="3" onclick="setPlayer(3)" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="square" id="4" onclick="setPlayer(4)" value="" /></td>
+                        <td><input type="button" class="square" id="5" onclick="setPlayer(5)" value="" /></td>
+                        <td><input type="button" class="square" id="6" onclick="setPlayer(6)" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="square" id="7" onclick="setPlayer(7)" value="" /></td>
+                        <td><input type="button" class="square" id="8" onclick="setPlayer(8)" value="" /></td>
+                        <td><input type="button" class="square" id="9" onclick="setPlayer(9)" value="" /></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        </div>
+
+        <section class="bottomWrapper">
+            <div class="resetDiv">
+                <button onclick="allReset()" class="resetBtn">Reset</button>
+            </div>
+            <section id="dashboard">
+                <div>
+                    <div>
+                        <p class="info">
+                            <span style="color: green">O : <span id="oScore"></span></span>
+                            VS
+                            <span style="color: red">X : <span id="xScore"></span></span>
+                        </p>
+                    </div>
+                    <div id="winningRecord" style="font-size: 1.5rem;"></div>
+                </div>
+
+            </section>
+            <div class="ref">
+                <h2>References</h2>
+                <ul>
+                    <li><a
+                            href="https://code.sololearn.com/Wg6rSGY44c7u/#js">https://code.sololearn.com/Wg6rSGY44c7u/#js</a>
+                    </li>
+                    <li><a href="https://codepen.io/manabox/pen/raQmpL">https://codepen.io/manabox/pen/raQmpL</a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section align="center" id="popup">
+        <p id="text" style="font-size: 1.5rem;">text</p>
+        <button id="popupbutton" onclick="reset()">Again</button>
+        <button id="gameResetbutton" onclick="reGame()">ReGame (Chance for REVENGE)</button>
+    </section>
+
+    <section id="overlay"></section>
+
+</body>
+
+</html>
