@@ -392,6 +392,15 @@ footer>div>a, footer>div>a:hover {
     text-decoration: none;
 }
 
+.displayInPc {
+    display: block;
+}
+
+.displayInMobile {
+    display: none;
+}
+
+
 
 /*Media Query Starts Here*/
 
