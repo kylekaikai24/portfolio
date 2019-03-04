@@ -445,6 +445,18 @@ footer>div>a, footer>div>a:hover {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .project {
+        background-image: url('https://ehoprojekt.com/wp-content/uploads/2018/03/damask-1.png');
+        min-height: 100%;
+        width: 100%;
+
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     
     .navbar-brand {
         width: 59%;
@@ -463,8 +475,8 @@ footer>div>a, footer>div>a:hover {
     }
 
     #navbarNavDropdown {
-        margin-left: 61%;
-        margin-top: -10%;
+        margin-left: 53%;
+        margin-top: -13%;
     }
     
 
@@ -515,7 +527,7 @@ footer>div>a, footer>div>a:hover {
     .captionMsgUp {
         padding-top: 0%; 
     }
-     .ebackground>div>p, .experience>div>p{
+     .ebackground>div>p, .experience>div>p, .project>div>p{
         font-size: 3.5rem;
         display: block;
         height: 30%;
@@ -528,7 +540,7 @@ footer>div>a, footer>div>a:hover {
         text-align: center;
     }
     
-    .ebackground>div, .experience>div {
+    .ebackground>div, .experience>div, .project>div{
         padding: 22% 0 0 0;
     }
 
@@ -578,10 +590,79 @@ footer>div>a, footer>div>a:hover {
         border: none;
         margin-top: 15%;
     }
+    
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
-    .project, .projectSlide {
-        display: none;
-    }
+.carousel-control-next {
+    width: 8%;
+    height: 10%;
+    margin: 54% 0 0 0;
+    background: lightgray;
+}
+
+.carousel-control-prev {
+    width: 8%;
+    height: 10%;
+    margin: 54% 0 0 0;
+    background: lightgray;
+}
+
+.carousel-inner>div>img{
+    height: 480px;
+}
+
+.carousel-inner>div>div>h5{
+    color: black;
+    margin: -17% auto;
+    font-size: 30px;
+    width: 40%;
+}
+
+
+.carousel-inner>div>div>button{
+    margin: 22% auto;
+}
+
+.carousel-inner>div:nth-of-type(2)>div>h5{
+    margin: 0 0 -11% -26%;
+    font-size: 1.8rem;
+    width: 150%;
+    color: white;
+}
+
+.carousel-inner>div:nth-of-type(2)>div>button{
+    margin: 22% auto;
+}
+
+.carousel-inner>div>div>button>a{
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-caption {
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    margin: -13% auto;
+}
+
+.displayInPc {
+    display: none;
+}
+
+.displayInMobile {
+    display: block;
+}
+
 }
 
 
